@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Zheng — Medical Biophysics</title>
+  <meta
+    name="description"
+    content="Daniel Zheng — Medical Biophysics (B.Sc. 2028) at Western University and researcher at mMILAB, Lawson Research Institute."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Atmospheric forest lighting & subtle grain -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="glow glow-primary"></div>
+    <div class="glow glow-secondary"></div>
+    <div class="noise-layer"></div>
+  </div>
+
+  <!-- Minimal Sticky Header -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-inner container" aria-label="Primary navigation">
+      <a href="#top" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Daniel Zheng</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Background</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle light or dark theme"
+        >
+          <span id="theme-label">Light</span>
+        </button>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-main">
+        <p class="hero-kicker mono">WESTERN UNIVERSITY · B.SC. MEDICAL BIOPHYSICS · 2028</p>
+        <h1 class="hero-title">
+          Daniel Zheng
+          <span class="hero-serif">exploring optical brain imaging.</span>
+        </h1>
+        <p class="hero-lead">
+          Undergraduate studying <strong>Medical Biophysics</strong> at the University of Western Ontario and researching
+          non-invasive cerebral blood flow at
+          <a href="https://www.mmilab.ca/" target="_blank" rel="noreferrer" class="inline-link">mMILAB</a>
+          (Lawson Research Institute, St. Joseph's Hospital).
+        </p>
+
+        <div class="hero-actions">
+          <a href="#research" class="btn btn-primary">Explore Research</a>
+          <a href="https://github.com/dxnielzheng" target="_blank" rel="noreferrer" class="btn btn-ghost">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/daniel9zheng/" target="_blank" rel="noreferrer" class="btn btn-ghost">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-index glass-card" aria-label="At a glance">
+        <div class="index-header mono">PROFILE OVERVIEW</div>
+        <dl class="index-list">
+          <div class="index-row">
+            <dt>Degree</dt>
+            <dd>B.Sc. Medical Biophysics · 2028</dd>
+          </div>
+          <div class="index-row">
+            <dt>Honours</dt>
+            <dd>Dean's Honour List (Y1 &amp; Y2)</dd>
+          </div>
+          <div class="index-row">
+            <dt>Research</dt>
+            <dd>mMILAB · Dr. Daniel Milej</dd>
+          </div>
+          <div class="index-row">
+            <dt>Coaching</dt>
+            <dd>CASI Level 2 · 167 Snow School</dd>
+          </div>
+          <div class="index-row">
+            <dt>Athletics</dt>
+            <dd>Ironman Prep &amp; Snowboarding</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 01 / Research -->
+    <section id="research" class="section">
+      <div class="section-label mono">01 · RESEARCH</div>
+      <h2 class="section-heading">Optical Brain Imaging at mMILAB</h2>
+
+      <div class="research-grid">
+        <div class="research-copy reveal">
+          <p>
+            Supervised by <strong>Dr. Daniel Milej</strong> throughout the year, I investigate how
+            <a href="https://www.openwater.health/pulsed-scos" target="_blank" rel="noreferrer" class="inline-link">Pulsed Speckle Contrast Optical Spectroscopy (Pulsed-SCOS)</a>
+            works and support the Multi-Modal Imaging Lab's transition from traditional
+            <strong>Diffuse Correlation Spectroscopy (DCS)</strong> to <strong>SCOS</strong>.
+          </p>
+          <p>
+            While conventional DCS measures speckle fluctuations through a single-mode fiber one channel at a time,
+            Pulsed-SCOS pairs short near-infrared laser pulses with a CMOS camera sensor to capture millions of speckles
+            simultaneously—improving signal-to-noise ratio for deeper, non-invasive cerebral blood-flow monitoring.
+          </p>
+
+          <a href="https://www.lawsonresearch.ca/" target="_blank" rel="noreferrer" class="institute-card glass-card">
+            <img
+              src="assets/lawson-logo-dark.svg"
+              alt="Lawson Research Institute at St. Joseph's Health Care London logo"
+              class="institute-logo logo-dark"
+            />
+            <img
+              src="assets/lawson-logo-light.svg"
+              alt="Lawson Research Institute at St. Joseph's Health Care London logo"
+              class="institute-logo logo-light"
+            />
+            <div class="institute-text">
+              <span class="mono">INSTITUTE LOCATION</span>
+              <strong>Lawson Research Institute · St. Joseph's Hospital</strong>
+            </div>
+          </a>
+
+          <div class="link-row">
+            <a href="https://www.mmilab.ca/" target="_blank" rel="noreferrer" class="text-link">mMILAB Website ↗</a>
+            <a href="https://www.openwater.health/pulsed-scos" target="_blank" rel="noreferrer" class="text-link">Pulsed-SCOS Overview ↗</a>
+          </div>
+        </div>
+
+        <!-- Compact Optical Mode Visualizer -->
+        <aside class="sim-card glass-card reveal">
+          <div class="sim-top">
+            <div class="sim-title-wrap">
+              <span class="sim-led" aria-hidden="true"></span>
+              <span class="mono sim-label">OPTICAL FLOW DEMO</span>
+            </div>
+            <div class="mode-switch" role="group" aria-label="Optical modality simulation">
+              <button type="button" class="mode-btn" data-mode="dcs">DCS</button>
+              <button type="button" class="mode-btn active" data-mode="scos">Pulsed-SCOS</button>
+            </div>
+          </div>
+          <canvas id="speckle-canvas" width="420" height="225" aria-label="Interactive laser speckle simulation"></canvas>
+          <div class="sim-footer">
+            <span id="telemetry-detection">CMOS Camera Array</span>
+            <span id="telemetry-snr" class="accent-text mono">MULTI-SPECKLE SNR</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 02 / Experience -->
+    <section id="experience" class="section">
+      <div class="section-label mono">02 · EXPERIENCE</div>
+      <h2 class="section-heading">Experience &amp; Leadership</h2>
+
+      <div class="entry-list">
+        <article class="entry-row reveal">
+          <div class="entry-meta">
+            <span class="mono">CURRENT · FULL YEAR</span>
+            <p>London, ON</p>
+          </div>
+          <div class="entry-body">
+            <h3>
+              Undergraduate Researcher ·
+              <a href="https://www.mmilab.ca/" target="_blank" rel="noreferrer" class="inline-link">mMILAB</a>
+            </h3>
+            <p class="entry-sub">Lawson Research Institute, St. Joseph's Hospital · Supervised by Dr. Daniel Milej</p>
+            <p>
+              Exploring Pulsed-SCOS instrumentation and physics to help transition cerebral blood-flow monitoring
+              workflows from traditional DCS to SCOS.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry-row reveal">
+          <div class="entry-meta">
+            <span class="mono">PAST · CASI LEVEL 2</span>
+            <p>Mount St. Louis Moonstone</p>
+          </div>
+          <div class="entry-body">
+            <h3>
+              Snowboard Instructor ·
+              <a href="https://www.167ca.com/" target="_blank" rel="noreferrer" class="inline-link">167 Snow School</a>
+            </h3>
+            <p class="entry-sub">CASI Level 2 Certified · Bilingual Instruction (English &amp; Chinese)</p>
+            <p>
+              Coached youth and adult riders across group and private lessons at Mount St. Louis Moonstone, focusing on
+              progressive technique, balance feedback, and mountain safety.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry-row reveal">
+          <div class="entry-meta">
+            <span class="mono">CAMPUS CLUBS</span>
+            <p>Western University</p>
+          </div>
+          <div class="entry-body">
+            <h3>Poker Club &amp; Ski and Snowboard Club</h3>
+            <p>
+              Active member in Western University's Poker Club and Ski and Snowboard Club outside of academics and lab work.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 03 / Background -->
+    <section id="education" class="section">
+      <div class="section-label mono">03 · BACKGROUND</div>
+      <h2 class="section-heading">Education &amp; Capabilities</h2>
+
+      <div class="two-col">
+        <div class="col-block glass-card reveal">
+          <h3 class="col-title">Education</h3>
+
+          <div class="edu-item">
+            <div class="edu-head">
+              <strong>University of Western Ontario</strong>
+              <span class="mono">2024 – 2028</span>
+            </div>
+            <p>B.Sc. Single Major in Medical Biophysics</p>
+            <span class="honour-badge">Dean's Honour List · Year 1 &amp; Year 2</span>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-head">
+              <strong>Bur Oak Secondary School</strong>
+              <span class="mono">Graduated 2024</span>
+            </div>
+            <p class="muted">Executive, Math Club &amp; Chess Club</p>
+          </div>
+        </div>
+
+        <div class="col-block glass-card reveal">
+          <h3 class="col-title">Skills &amp; Athletics</h3>
+
+          <div class="skill-group">
+            <span class="mono skill-label">PROGRAMMING</span>
+            <div class="chip-row">
+              <span class="chip">Python</span>
+              <span class="chip">MATLAB</span>
+              <span class="chip">Java</span>
+              <span class="chip">R</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="mono skill-label">RESEARCH &amp; OPTICS</span>
+            <p>Pulsed-SCOS, Diffuse Correlation Spectroscopy (DCS), Optical Brain Imaging</p>
+          </div>
+
+          <div class="skill-group">
+            <span class="mono skill-label">CERTIFICATION &amp; SPORT</span>
+            <p>CASI Level 2 Snowboard Instructor · Currently training for an Ironman triathlon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- 04 / Contact -->
+    <section id="contact" class="section">
+      <div class="contact-card glass-card reveal">
+        <div>
+          <div class="section-label mono">04 · CONTACT</div>
+          <h2 class="section-heading">Let's Connect</h2>
+          <p class="contact-note">
+            Feel free to reach out about Medical Biophysics, optical imaging research, snowboarding, or endurance training.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <div class="email-box">
+            <a href="mailto:daniel9zheng@gmail.com"><code id="email-text">daniel9zheng@gmail.com</code></a>
+            <button type="button" class="btn btn-primary btn-sm" id="copy-email-btn">Copy</button>
+          </div>
+          <div class="contact-links">
+            <a href="https://github.com/dxnielzheng" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/daniel9zheng/" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <span>Daniel Zheng · <span id="year">2026</span></span>
+    <a href="#top" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
